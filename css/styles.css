@@ -4,21 +4,45 @@
 font-family: 'Bebas Neue', cursive; */
 
 body {
-    background-image: url(../img/milky-way.jpg);
+    background: url(../img/milky-way.jpg) center center no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
     color: gold;
 }
 
-.nav-tabs {
-    color: gold;
+.logo {
+    margin-top: 15px;
+    height: 10vh;
+}
+
+.nav {
+    margin-top: 70px;
 }
 
 .jumbotron {
     background: url(../img/satellite.jpg) center center no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
+}
+
+.welcome {
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.img-thumbnail:hover {
+    transform: scale(.95,.95);
+}
+
+.mid {
+    background-color: #000000;
+}
+
+footer {
+    margin-top: 10px;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.well {
+    background-color: #000000;
 }
