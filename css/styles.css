@@ -3,28 +3,73 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Bebas Neue', cursive; */
 
+/* GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex_container {
+    display: flex;
+}
+
 body {
     background: url(../img/milky-way.jpg) center center no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    color: gold;
+    color: #E9DB1D;
 }
 
-.navbar {
+/* NAVBAR */
+
+nav.navbar {
     background-color: rgba(0,0,0,.5);
+    border-color: transparent;
+    color: #E9DB1D;
+    height: 10vh;
 }
 
 .logo {
-    height: 150%;
+    height: 6vh;
+    padding-bottom: 10px;
 }
+
+.navbar-header {
+    color: #E9DB1D;
+}
+
+/* HERO */
 
 .jumbotron {
     background: url("../img/satellite.jpg") center no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 600px;
 }
 
 .jumbotron > h1 {
     color: black;
     text-shadow: 1px 0 #E9DB1D, -1px 0 #E9DB1D, 0 1px #E9DB1D, 0 -1px #E9DB1D;
+}
+
+/* PREVIEW */
+
+.preview_section {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.preview_box {
+    border: 3px solid #E9DB1D;
+    border-radius: 10px;
+    background-color: #000;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 30%;
+    margin: 5px;
+}
+
+.preview_img{
+    width: 85%;
 }
