@@ -18,7 +18,7 @@ body {
     background: url(../img/milky-way.jpg) center center no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
-    color: #E9DB1D;
+    color: #7F491B;
 }
 
 /* NAVBAR */
@@ -26,17 +26,17 @@ body {
 nav.navbar {
     background-color: rgba(0,0,0,.5);
     border-color: transparent;
-    color: #E9DB1D;
-    height: 10vh;
+    color: #7F491B;
+    height: 80px;
 }
 
 .logo {
-    height: 6vh;
-    padding-bottom: 10px;
+    height: 65px;
+    margin-top: -10px;
 }
 
-.navbar-header {
-    color: #E9DB1D;
+.navbar-title {
+    color: #7F491B;
 }
 
 /* HERO */
@@ -47,9 +47,10 @@ nav.navbar {
     height: 600px;
 }
 
-.jumbotron > h1 {
+.jumbotron h1 {
     color: black;
-    text-shadow: 1px 0 #E9DB1D, -1px 0 #E9DB1D, 0 1px #E9DB1D, 0 -1px #E9DB1D;
+    text-shadow: 1px 0 2px #7F491B, -1px 0 2px #7F491B, 0 1px 2px #7F491B, 0 -1px 2px #7F491B;
+    margin-top: 200px;
 }
 
 /* PREVIEW */
@@ -61,7 +62,7 @@ nav.navbar {
 }
 
 .preview_box {
-    border: 3px solid #E9DB1D;
+    border: 2px solid #7F491B;
     border-radius: 10px;
     background-color: #000;
     flex-flow: column nowrap;
@@ -72,4 +73,42 @@ nav.navbar {
 
 .preview_img{
     width: 85%;
+}
+
+/* Article sections */
+
+.article {
+    height: 800px;
+    width: 100%;
+    font-size: 1.3em;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.article1_section {
+    background: url(../img/astronaut.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.article2_section {
+    background: url(../img/astronaut-moon-flag.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #dfdfdf;
+    text-shadow: 2px 2px #000;
+}
+
+
+
+/* Media queries */
+@media only screen and (max-width:768px) {
+    .preview_section {
+        flex-flow: column nowrap;
+    }
+
+    .preview_box {
+        width: 95%;
+    }
 }
