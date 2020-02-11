@@ -1,0 +1,20 @@
+.vital_info {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.vital_info > .stat_box, 
+.vital_info > img {
+    display: flex;
+    width: 40%;
+    flex-basis: 1;
+}
+
+.stat_box {
+    flex-flow: column nowrap;
+}
+
+.stat_box h4,
+.stat_box p {
+    display: inline;
+}
