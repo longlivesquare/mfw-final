@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Bebas Neue', cursive; */
+
+/* GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex_container {
+    display: flex;
+}
+
+body {
+    background: url(../img/milky-way.jpg) center center no-repeat;
+    width: 100%;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    color: #37526F;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+    background-color: rgba(0,0,0,.5);
+    border-color: transparent;
+    color: #37526F;
+    height: 80px;
+}
+
+.logo {
+    height: 65px;
+    margin-top: -10px;
+}
+
+.navbar-title {
+    color: #37526F;
+}
+
+/* HERO */
+
+.jumbotron {
+    background: url("../img/satellite.jpg") center no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.jumbotron h1 {
+    color: black;
+    text-shadow: 1px 0 2px #37526F, -1px 0 2px #37526F, 0 1px 2px #37526F, 0 -1px 2px #37526F;
+    margin-top: 200px;
+}
+
+/* PREVIEW */
+
+.preview_section {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.preview_box {
+    border: 2px solid #37526F;
+    border-radius: 10px;
+    background-color: #000;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 30%;
+    margin: 5px;
+}
+
+.preview_img{
+    width: 85%;
+}
+
+/* Article sections */
+
+.article {
+    height: 950px;
+    width: 100%;
+    font-size: 1.3em;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.article1_section {
+    background: url(../img/astronaut.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.article2_section {
+    background: url(../img/astronaut-moon-flag.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #dfdfdf;
+    text-shadow: 2px 2px #000;
+}
+
+/* Footer section */
+
+.footer {
+    height: 50px;
+    background-color: rgba(0,0,0,.3);
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    flex-basis: 1;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-facebook-square {
+    color: #4267B2;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-reddit-square {
+    color: #FF4500;
+}
+
+.left-border {
+    padding-right: 8px;
+    margin-right: 8px;
+    border-right: 2px solid #37526F;
+}
+
+.copy {
+    flex-basis: 1;
+}
+
+/* Media queries */
+@media only screen and (max-width:768px) {
+    .preview_section {
+        flex-flow: column nowrap;
+    }
+
+    .preview_box {
+        width: 95%;
+    }
+
+    .article {
+        height: 1250px;
+    }
+
+    .footer {
+        font-size: .75em;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .social {
+        font-size: .6em;
+    }
+}
