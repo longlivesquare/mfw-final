@@ -1,3 +1,7 @@
+.planet_content {
+    flex-flow: column wrap;
+}
+
 .vital_info {
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -12,9 +16,18 @@
 
 .stat_box {
     flex-flow: column nowrap;
+    background-color: rgba(0,0,0,.6);
+    justify-content: space-evenly;
+    padding-left: 20px;
 }
 
 .stat_box h4,
 .stat_box p {
     display: inline;
+}
+
+.planet_info {
+    margin-top: 25px;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,.6);
 }
