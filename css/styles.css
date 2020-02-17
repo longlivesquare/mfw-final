@@ -38,6 +38,8 @@ nav.navbar {
 
 .navbar-title {
     color: #37526F;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 2px #000;
 }
 
 /* HERO */
