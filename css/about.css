@@ -19,6 +19,7 @@
 
 .about_content   {
     font-family: 'Bebas Neue', cursive;
+    text-shadow: 1px 1px #000;
 }
 
 .f1 {
@@ -48,10 +49,7 @@
     align-items: center;
 }
 
-.row-split img {
-    width: 60px;
-    height: 25px;
-}
+
 
 .row-center {
     width: 100%;
