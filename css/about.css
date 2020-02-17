@@ -28,6 +28,11 @@
 
 .f2 {
     background-image: linear-gradient(rgba(21,37,97.6), rgba(69,105,59,.6));
+    transition: transform 10s;
+}
+
+.f2:hover {
+    transform: rotate(360deg);
 }
 
 .f3 {
@@ -49,7 +54,13 @@
     align-items: center;
 }
 
+.row-split img {
+    transition: transform 5s;
+}
 
+.row-split img:hover{
+    transform: rotate(360deg);
+}
 
 .row-center {
     width: 100%;
