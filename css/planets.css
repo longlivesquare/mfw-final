@@ -1,0 +1,45 @@
+.planet_content {
+    flex-flow: column wrap;
+}
+
+.vital_info {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.vital_info > .stat_box, 
+.vital_info > img {
+    display: flex;
+    width: 40%;
+    flex-basis: 1;
+}
+
+.stat_box {
+    flex-flow: column nowrap;
+    background-color: rgba(0,0,0,.6);
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.stat_box h4,
+.stat_box p {
+    display: inline;
+}
+
+.planet_info {
+    margin-top: 25px;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,.6);
+}
+
+@media only screen and (max-width: 768px) {
+    .vital_info {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .vital_info > .stat_box, 
+    .vital_info > img {
+        width: 100%;
+    }
+}
